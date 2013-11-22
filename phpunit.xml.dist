@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit colors="true" bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="Validator Exception Handler Test Suite">
+            <directory>./test</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">
+                ./
+            </directory>
+            <exclude>
+                <directory>./test</directory>
+            </exclude>
+        </whitelist>
+        <blacklist>
+            <directory>./vendor</directory>
+        </blacklist>
+    </filter>
+
+    <php>
+        <ini name="zend.enable_gc" value="0" />
+    </php>
+</phpunit>
