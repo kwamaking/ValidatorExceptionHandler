@@ -14,10 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "ValidatorExceptionHandler\\": "src/"
-        },
-        "classmap": [
-            "./Module.php"
-        ]
+            "ValidatorExceptionHandler": "src/"
+        }
     }
 }
