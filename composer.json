@@ -17,7 +17,7 @@
             "ValidatorExceptionHandler\\": "src/"
         },
         "classmap": [
-            "./"
+            "./Module.php"
         ]
     }
 }
