@@ -1,4 +1,4 @@
-ValidatorExceptionHandler
+Validator Exception Handler
 =========================
 
 A very simple exception handler for Symfony's Validator.
