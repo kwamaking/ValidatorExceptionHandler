@@ -10,6 +10,8 @@ For documentation on how to use Symfony's Validator please see:
 
 http://symfony.com/doc/2.4/book/validation.html
 
+Note:  You can pull the annotation style validator from the service locator using the "Validator" key.
+
 The usage is pretty simple.  If you follow Symfony's documentation for validating a full object, you can take the response from that and pass it into the exception handler.
 
     $exception_handler = $this->service_locator->get('ValidatorExceptionHandler');//or
