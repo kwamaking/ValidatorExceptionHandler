@@ -1,6 +1,8 @@
 <?php
 namespace ValidatorExceptionHandler;
 
+use Symfony\Component\Validator\Validation;
+
 class Module
 {
     public function getConfig()
@@ -12,6 +14,12 @@ class Module
             'factories' => array(
                 'ValidatorExceptionHandler' => function() {
                     return new Constraint\ConstraintViolationExceptionHandler();
+                },
+                'Validator' => function() {
+                    $validator = Validation::createValidatorBuilder()
+                        ->enableAnnotationMapping()
+                        ->getValidator();
+                    return $validator;
                 }
             )
         );
