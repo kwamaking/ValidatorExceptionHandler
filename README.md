@@ -10,6 +10,8 @@ To install with composer simply require:
 
     "kwamaking/validator-exception-handler": "dev-master"
 
+Don't forget to add the module to your application configuration for ZF2.
+
 Usage
 -----
 
