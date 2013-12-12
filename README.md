@@ -23,7 +23,7 @@ The usage is pretty simple.  If you follow Symfony's documentation for validatin
 
     $exception_handler = $this->service_locator->get('ValidatorExceptionHandler');//or
     $exception_handler = new ConstraintViolationExceptionHandler();
-    $exception_handler->handleException($violation_list); //this will throw a validation exception if there is one
+    $exception_handler->handleException($violation_list);
 
 When you validate an object with Symfony's Validator, it will hand back a constraint violation list, full of constraint violation objects.  This simple tool just grabs the first object in that list, and throws an exception with the violation message.
 
