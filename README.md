@@ -7,8 +7,9 @@ Installation
 -----
 
 To install with composer simply require:
+
     "kwamaking/validator-exception-handler": "dev-master"
-    
+
 Usage
 -----
 
