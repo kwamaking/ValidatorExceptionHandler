@@ -3,6 +3,12 @@ Validator Exception Handler
 
 A very simple exception handler for Symfony's Validator.
 
+Installation
+-----
+
+To install with composer simply require:
+    "kwamaking/validator-exception-handler": "dev-master"
+    
 Usage
 -----
 
